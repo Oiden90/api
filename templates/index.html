@@ -1,0 +1,19 @@
+<html>
+	<title>Home</title>
+	<body>
+		<h1>Omer's API Wrapper</h1>
+		<p>You can specify the youtube video ID, start and end time by typing the following into the url: http://localhost:5000/api/v1/resources?id={youtubeVideoID}&start={startTime}&end={endTime}</p><br/>
+		<p>Below is a wrapper which makes the above easier.</p>
+		
+		<form name="getVideo" action="." method="post">
+			<label for="ytVideoID">YouTube Video ID:</label>
+			<input type="text" id="ytVideoID" name="ytVideoID" placeholder="aYLR4BcX7Rg..." maxlength="50">
+			<label for="startTime">Start Time(s):</label>
+			<input type="text" id="startTime" name="startTime" placeholder="10" maxlength="50">
+			<label for="endTime">End Time(s):</label>
+			<input type="text" id="endTime" name="endTime" placeholder="50" maxlength="50">
+			
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
